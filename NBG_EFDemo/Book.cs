@@ -14,5 +14,6 @@ namespace NBG_EFDemo
         public int? Pages { get; set; }
         public int? AuthorId { get; set; }
         public Author? Author { get; set; }
+        public List<Genre> Genres { get; set; } = new();
     }
 }
