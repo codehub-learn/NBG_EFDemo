@@ -11,5 +11,6 @@ namespace NBG_EFDemo
         public int Id { get; set; }
         public string? Name { get; set; }
         public bool Fiction { get; set; }
+        public List<Book> Books { get; set; } = new();
     }
 }
