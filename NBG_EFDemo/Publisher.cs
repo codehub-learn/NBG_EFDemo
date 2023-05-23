@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace NBG_EFDemo
 {
-    internal class Publisher
+    public class Publisher
     {
+        public int PublisherKey { get; set; }
+        public string? Name { get; set; }
+        public string? Language { get; set; }
     }
 }

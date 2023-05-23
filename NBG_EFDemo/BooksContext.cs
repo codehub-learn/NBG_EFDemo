@@ -18,5 +18,10 @@ namespace NBG_EFDemo
                 ("Data Source = localhost; Initial Catalog = EF_Demo; Integrated Security = true; TrustServerCertificate=True");
         }
 
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Publisher>().HasKey(p => p.PublisherKey);
+        }
+
     }
 }
